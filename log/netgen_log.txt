@@ -1,0 +1,25 @@
+++++++++++++++++++++++++++++++++ 
+ NETGEN LOG FILE:
+++++++++++++++++++++++++++++++++ 
+
+
+     - DATA FILE : input/data_test at 2013-11-28 17:07:29.411382
+initial:
+ number of nodes = 12
+ number of edges = 13
+after mapping:
+ number of nodes = 7
+ number of edges = 13
+
+Finished at: 2013-11-28 17:07:29.411858
+
+
+     - DATA FILE : input/data_test at 2013-11-28 17:07:29.411897
+initial:
+ number of nodes = 12
+ number of edges = 13
+after mapping:
+ number of nodes = 7
+ number of edges = 13
+
+Finished at: 2013-11-28 17:07:29.412327

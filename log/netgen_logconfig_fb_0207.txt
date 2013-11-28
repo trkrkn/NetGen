@@ -1,0 +1,900 @@
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz020301 at 2013-10-26 00:46:39.428575
+initial:
+ number of nodes = 397998
+ number of edges = 792879
+after mapping:
+ number of nodes = 394134
+ number of edges = 792879
+after dropping entries:
+ number of nodes = 4863
+ number of edges = 66148
+
+initial:
+ number of nodes = 4863
+ number of edges = 66148
+after mapping:
+ number of nodes = 4857
+ number of edges = 66148
+after dropping entries:
+ number of nodes = 4857
+ number of edges = 66135
+after merging lines:
+ number of nodes = 4857
+ number of edges = 65202
+
+initial:
+ number of nodes = 4857
+ number of edges = 65202
+after mapping:
+ number of nodes = 2628
+ number of edges = 65202
+after dropping entries:
+ number of nodes = 2628
+ number of edges = 63073
+after merging lines:
+ number of nodes = 2628
+ number of edges = 35514
+
+Finished at: 2013-10-26 01:06:22.445164
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz020601 at 2013-10-26 01:06:22.476413
+initial:
+ number of nodes = 397483
+ number of edges = 788582
+after mapping:
+ number of nodes = 393695
+ number of edges = 788582
+after dropping entries:
+ number of nodes = 4820
+ number of edges = 65275
+
+initial:
+ number of nodes = 4820
+ number of edges = 65275
+after mapping:
+ number of nodes = 4818
+ number of edges = 65275
+after merging lines:
+ number of nodes = 4818
+ number of edges = 64975
+
+initial:
+ number of nodes = 4818
+ number of edges = 64975
+after mapping:
+ number of nodes = 2580
+ number of edges = 64975
+after dropping entries:
+ number of nodes = 2580
+ number of edges = 62997
+after merging lines:
+ number of nodes = 2580
+ number of edges = 35330
+
+Finished at: 2013-10-26 01:24:29.729829
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz020901 at 2013-10-26 01:24:29.776703
+initial:
+ number of nodes = 396941
+ number of edges = 790497
+after mapping:
+ number of nodes = 393201
+ number of edges = 790497
+after dropping entries:
+ number of nodes = 4703
+ number of edges = 63736
+
+initial:
+ number of nodes = 4703
+ number of edges = 63736
+after mapping:
+ number of nodes = 4703
+ number of edges = 63736
+after merging lines:
+ number of nodes = 4703
+ number of edges = 63512
+
+initial:
+ number of nodes = 4703
+ number of edges = 63512
+after mapping:
+ number of nodes = 2529
+ number of edges = 63512
+after dropping entries:
+ number of nodes = 2529
+ number of edges = 61609
+after merging lines:
+ number of nodes = 2529
+ number of edges = 34859
+
+Finished at: 2013-10-26 01:43:51.262593
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz021201 at 2013-10-26 01:43:51.293842
+initial:
+ number of nodes = 398127
+ number of edges = 794652
+after mapping:
+ number of nodes = 394361
+ number of edges = 794652
+after dropping entries:
+ number of nodes = 4793
+ number of edges = 64078
+
+initial:
+ number of nodes = 4793
+ number of edges = 64078
+after mapping:
+ number of nodes = 4793
+ number of edges = 64078
+after merging lines:
+ number of nodes = 4793
+ number of edges = 63832
+
+initial:
+ number of nodes = 4793
+ number of edges = 63832
+after mapping:
+ number of nodes = 2558
+ number of edges = 63832
+after dropping entries:
+ number of nodes = 2558
+ number of edges = 61758
+after merging lines:
+ number of nodes = 2558
+ number of edges = 35118
+
+Finished at: 2013-10-26 02:04:18.246806
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz030301 at 2013-10-26 02:04:18.262431
+initial:
+ number of nodes = 395720
+ number of edges = 789759
+after mapping:
+ number of nodes = 391977
+ number of edges = 789759
+after dropping entries:
+ number of nodes = 4791
+ number of edges = 63703
+
+initial:
+ number of nodes = 4791
+ number of edges = 63703
+after mapping:
+ number of nodes = 4788
+ number of edges = 63703
+after merging lines:
+ number of nodes = 4788
+ number of edges = 63427
+
+initial:
+ number of nodes = 4788
+ number of edges = 63427
+after mapping:
+ number of nodes = 2528
+ number of edges = 63427
+after dropping entries:
+ number of nodes = 2528
+ number of edges = 61253
+after merging lines:
+ number of nodes = 2528
+ number of edges = 34779
+
+Finished at: 2013-10-26 02:25:30.995473
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz030601 at 2013-10-26 02:25:31.011098
+initial:
+ number of nodes = 393085
+ number of edges = 784165
+after mapping:
+ number of nodes = 389278
+ number of edges = 784165
+after dropping entries:
+ number of nodes = 4989
+ number of edges = 62032
+
+initial:
+ number of nodes = 4989
+ number of edges = 62032
+after mapping:
+ number of nodes = 4988
+ number of edges = 62032
+after merging lines:
+ number of nodes = 4988
+ number of edges = 61763
+
+initial:
+ number of nodes = 4988
+ number of edges = 61763
+after mapping:
+ number of nodes = 2492
+ number of edges = 61763
+after dropping entries:
+ number of nodes = 2492
+ number of edges = 59727
+after merging lines:
+ number of nodes = 2492
+ number of edges = 33684
+
+Finished at: 2013-10-26 02:42:31.094358
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz030901 at 2013-10-26 02:42:31.156856
+initial:
+ number of nodes = 391226
+ number of edges = 780929
+after mapping:
+ number of nodes = 387448
+ number of edges = 780929
+after dropping entries:
+ number of nodes = 4976
+ number of edges = 61794
+
+initial:
+ number of nodes = 4976
+ number of edges = 61794
+after mapping:
+ number of nodes = 4976
+ number of edges = 61794
+after merging lines:
+ number of nodes = 4976
+ number of edges = 61541
+
+initial:
+ number of nodes = 4976
+ number of edges = 61541
+after mapping:
+ number of nodes = 2473
+ number of edges = 61541
+after dropping entries:
+ number of nodes = 2473
+ number of edges = 59407
+after merging lines:
+ number of nodes = 2473
+ number of edges = 33387
+
+Finished at: 2013-10-26 03:02:29.704298
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz031201 at 2013-10-26 03:02:29.766796
+initial:
+ number of nodes = 392119
+ number of edges = 782786
+after mapping:
+ number of nodes = 388325
+ number of edges = 782786
+after dropping entries:
+ number of nodes = 5063
+ number of edges = 62021
+
+initial:
+ number of nodes = 5063
+ number of edges = 62021
+after mapping:
+ number of nodes = 5063
+ number of edges = 62021
+after merging lines:
+ number of nodes = 5063
+ number of edges = 61761
+
+initial:
+ number of nodes = 5063
+ number of edges = 61761
+after mapping:
+ number of nodes = 2475
+ number of edges = 61761
+after dropping entries:
+ number of nodes = 2475
+ number of edges = 59531
+after merging lines:
+ number of nodes = 2475
+ number of edges = 33615
+
+Finished at: 2013-10-26 03:23:11.328761
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz040301 at 2013-10-26 03:23:11.344386
+initial:
+ number of nodes = 388448
+ number of edges = 774957
+after mapping:
+ number of nodes = 384666
+ number of edges = 774957
+after dropping entries:
+ number of nodes = 4995
+ number of edges = 61963
+
+initial:
+ number of nodes = 4995
+ number of edges = 61963
+after mapping:
+ number of nodes = 4995
+ number of edges = 61963
+after merging lines:
+ number of nodes = 4995
+ number of edges = 61709
+
+initial:
+ number of nodes = 4995
+ number of edges = 61709
+after mapping:
+ number of nodes = 2453
+ number of edges = 61709
+after dropping entries:
+ number of nodes = 2453
+ number of edges = 59560
+after merging lines:
+ number of nodes = 2453
+ number of edges = 33452
+
+Finished at: 2013-10-26 03:40:32.817724
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz040601 at 2013-10-26 03:40:32.833348
+initial:
+ number of nodes = 384714
+ number of edges = 768438
+after mapping:
+ number of nodes = 380935
+ number of edges = 768438
+after dropping entries:
+ number of nodes = 4979
+ number of edges = 61463
+
+initial:
+ number of nodes = 4979
+ number of edges = 61463
+after mapping:
+ number of nodes = 4979
+ number of edges = 61463
+after merging lines:
+ number of nodes = 4979
+ number of edges = 61190
+
+initial:
+ number of nodes = 4979
+ number of edges = 61190
+after mapping:
+ number of nodes = 2429
+ number of edges = 61190
+after dropping entries:
+ number of nodes = 2429
+ number of edges = 59091
+after merging lines:
+ number of nodes = 2429
+ number of edges = 32853
+
+Finished at: 2013-10-26 04:01:35.847889
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz040901 at 2013-10-26 04:01:35.847889
+initial:
+ number of nodes = 382981
+ number of edges = 775140
+after mapping:
+ number of nodes = 379253
+ number of edges = 775140
+after dropping entries:
+ number of nodes = 4933
+ number of edges = 61032
+
+initial:
+ number of nodes = 4933
+ number of edges = 61032
+after mapping:
+ number of nodes = 4932
+ number of edges = 61032
+after merging lines:
+ number of nodes = 4932
+ number of edges = 60763
+
+initial:
+ number of nodes = 4932
+ number of edges = 60763
+after mapping:
+ number of nodes = 2390
+ number of edges = 60763
+after dropping entries:
+ number of nodes = 2390
+ number of edges = 58670
+after merging lines:
+ number of nodes = 2390
+ number of edges = 32736
+
+Finished at: 2013-10-26 04:17:39.057605
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz041201 at 2013-10-26 04:17:39.073230
+initial:
+ number of nodes = 384403
+ number of edges = 769245
+after mapping:
+ number of nodes = 380609
+ number of edges = 769245
+after dropping entries:
+ number of nodes = 5177
+ number of edges = 62568
+
+initial:
+ number of nodes = 5177
+ number of edges = 62568
+after mapping:
+ number of nodes = 5177
+ number of edges = 62568
+after merging lines:
+ number of nodes = 5177
+ number of edges = 62278
+
+initial:
+ number of nodes = 5177
+ number of edges = 62278
+after mapping:
+ number of nodes = 2421
+ number of edges = 62278
+after dropping entries:
+ number of nodes = 2421
+ number of edges = 59861
+after merging lines:
+ number of nodes = 2421
+ number of edges = 33151
+
+Finished at: 2013-10-26 04:32:29.019197
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz050301 at 2013-10-26 04:32:29.034821
+initial:
+ number of nodes = 380858
+ number of edges = 762947
+after mapping:
+ number of nodes = 377012
+ number of edges = 762947
+after dropping entries:
+ number of nodes = 5212
+ number of edges = 62531
+
+initial:
+ number of nodes = 5212
+ number of edges = 62531
+after mapping:
+ number of nodes = 5212
+ number of edges = 62531
+after merging lines:
+ number of nodes = 5212
+ number of edges = 62230
+
+initial:
+ number of nodes = 5212
+ number of edges = 62230
+after mapping:
+ number of nodes = 2408
+ number of edges = 62230
+after dropping entries:
+ number of nodes = 2408
+ number of edges = 59779
+after merging lines:
+ number of nodes = 2408
+ number of edges = 32914
+
+Finished at: 2013-10-26 04:46:37.044362
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz050601 at 2013-10-26 04:46:37.075611
+initial:
+ number of nodes = 379261
+ number of edges = 759363
+after mapping:
+ number of nodes = 375429
+ number of edges = 759363
+after dropping entries:
+ number of nodes = 5178
+ number of edges = 61686
+
+initial:
+ number of nodes = 5178
+ number of edges = 61686
+after mapping:
+ number of nodes = 5178
+ number of edges = 61686
+after merging lines:
+ number of nodes = 5178
+ number of edges = 61375
+
+initial:
+ number of nodes = 5178
+ number of edges = 61375
+after mapping:
+ number of nodes = 2387
+ number of edges = 61375
+after dropping entries:
+ number of nodes = 2387
+ number of edges = 58895
+after merging lines:
+ number of nodes = 2387
+ number of edges = 32414
+
+Finished at: 2013-10-26 05:00:42.257099
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz050901 at 2013-10-26 05:00:42.319597
+initial:
+ number of nodes = 378653
+ number of edges = 760427
+after mapping:
+ number of nodes = 374824
+ number of edges = 760427
+after dropping entries:
+ number of nodes = 5139
+ number of edges = 60377
+
+initial:
+ number of nodes = 5139
+ number of edges = 60377
+after mapping:
+ number of nodes = 5139
+ number of edges = 60377
+after merging lines:
+ number of nodes = 5139
+ number of edges = 60102
+
+initial:
+ number of nodes = 5139
+ number of edges = 60102
+after mapping:
+ number of nodes = 2360
+ number of edges = 60102
+after dropping entries:
+ number of nodes = 2360
+ number of edges = 57665
+after merging lines:
+ number of nodes = 2360
+ number of edges = 32007
+
+Finished at: 2013-10-26 05:14:53.266562
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz051201 at 2013-10-26 05:14:53.282187
+initial:
+ number of nodes = 381259
+ number of edges = 765152
+after mapping:
+ number of nodes = 377395
+ number of edges = 765152
+after dropping entries:
+ number of nodes = 5200
+ number of edges = 61152
+
+initial:
+ number of nodes = 5200
+ number of edges = 61152
+after mapping:
+ number of nodes = 5199
+ number of edges = 61152
+after dropping entries:
+ number of nodes = 5199
+ number of edges = 61149
+after merging lines:
+ number of nodes = 5199
+ number of edges = 60799
+
+initial:
+ number of nodes = 5199
+ number of edges = 60799
+after mapping:
+ number of nodes = 2380
+ number of edges = 60799
+after dropping entries:
+ number of nodes = 2380
+ number of edges = 58299
+after merging lines:
+ number of nodes = 2380
+ number of edges = 32461
+
+Finished at: 2013-10-26 05:29:10.478992
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz060301 at 2013-10-26 05:29:10.525866
+initial:
+ number of nodes = 379663
+ number of edges = 762577
+after mapping:
+ number of nodes = 375774
+ number of edges = 762577
+after dropping entries:
+ number of nodes = 5211
+ number of edges = 60442
+
+initial:
+ number of nodes = 5211
+ number of edges = 60442
+after mapping:
+ number of nodes = 5211
+ number of edges = 60442
+after dropping entries:
+ number of nodes = 5210
+ number of edges = 60185
+after merging lines:
+ number of nodes = 5210
+ number of edges = 59888
+
+initial:
+ number of nodes = 5210
+ number of edges = 59888
+after mapping:
+ number of nodes = 2371
+ number of edges = 59888
+after dropping entries:
+ number of nodes = 2371
+ number of edges = 57410
+after merging lines:
+ number of nodes = 2371
+ number of edges = 32113
+
+Finished at: 2013-10-26 05:43:21.519705
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz060601 at 2013-10-26 05:43:21.582203
+initial:
+ number of nodes = 379239
+ number of edges = 761770
+after mapping:
+ number of nodes = 375427
+ number of edges = 761770
+after dropping entries:
+ number of nodes = 5175
+ number of edges = 59284
+
+initial:
+ number of nodes = 5175
+ number of edges = 59284
+after mapping:
+ number of nodes = 5175
+ number of edges = 59284
+after dropping entries:
+ number of nodes = 5174
+ number of edges = 59042
+after merging lines:
+ number of nodes = 5174
+ number of edges = 58751
+
+initial:
+ number of nodes = 5174
+ number of edges = 58751
+after mapping:
+ number of nodes = 2342
+ number of edges = 58751
+after dropping entries:
+ number of nodes = 2342
+ number of edges = 56191
+after merging lines:
+ number of nodes = 2342
+ number of edges = 31439
+
+Finished at: 2013-10-26 05:57:25.498099
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz060901 at 2013-10-26 05:57:25.513723
+initial:
+ number of nodes = 377693
+ number of edges = 755932
+after mapping:
+ number of nodes = 373994
+ number of edges = 755932
+after dropping entries:
+ number of nodes = 5087
+ number of edges = 58133
+
+initial:
+ number of nodes = 5087
+ number of edges = 58133
+after mapping:
+ number of nodes = 5086
+ number of edges = 58133
+after merging lines:
+ number of nodes = 5086
+ number of edges = 57850
+
+initial:
+ number of nodes = 5086
+ number of edges = 57850
+after mapping:
+ number of nodes = 2319
+ number of edges = 57850
+after dropping entries:
+ number of nodes = 2319
+ number of edges = 55581
+after merging lines:
+ number of nodes = 2319
+ number of edges = 31291
+
+Finished at: 2013-10-26 06:11:13.445653
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz061201 at 2013-10-26 06:11:13.461277
+initial:
+ number of nodes = 381154
+ number of edges = 763731
+after mapping:
+ number of nodes = 377424
+ number of edges = 763731
+after dropping entries:
+ number of nodes = 5118
+ number of edges = 58678
+
+initial:
+ number of nodes = 5118
+ number of edges = 58678
+after mapping:
+ number of nodes = 5118
+ number of edges = 58678
+after merging lines:
+ number of nodes = 5118
+ number of edges = 58358
+
+initial:
+ number of nodes = 5118
+ number of edges = 58358
+after mapping:
+ number of nodes = 2325
+ number of edges = 58358
+after dropping entries:
+ number of nodes = 2325
+ number of edges = 55955
+after merging lines:
+ number of nodes = 2325
+ number of edges = 31503
+
+Finished at: 2013-10-26 06:25:15.205353
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz070301 at 2013-10-26 06:25:15.236602
+initial:
+ number of nodes = 369263
+ number of edges = 747636
+after mapping:
+ number of nodes = 365811
+ number of edges = 747636
+after dropping entries:
+ number of nodes = 4701
+ number of edges = 57324
+
+initial:
+ number of nodes = 4701
+ number of edges = 57324
+after mapping:
+ number of nodes = 4701
+ number of edges = 57324
+after merging lines:
+ number of nodes = 4701
+ number of edges = 57066
+
+initial:
+ number of nodes = 4701
+ number of edges = 57066
+after mapping:
+ number of nodes = 2280
+ number of edges = 57066
+after dropping entries:
+ number of nodes = 2280
+ number of edges = 54736
+after merging lines:
+ number of nodes = 2280
+ number of edges = 31147
+
+Finished at: 2013-10-26 06:38:29.060030
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz070601 at 2013-10-26 06:38:29.075654
+initial:
+ number of nodes = 368471
+ number of edges = 743451
+after mapping:
+ number of nodes = 365071
+ number of edges = 743451
+after dropping entries:
+ number of nodes = 4609
+ number of edges = 56101
+
+initial:
+ number of nodes = 4609
+ number of edges = 56101
+after mapping:
+ number of nodes = 4609
+ number of edges = 56101
+after merging lines:
+ number of nodes = 4609
+ number of edges = 55854
+
+initial:
+ number of nodes = 4609
+ number of edges = 55854
+after mapping:
+ number of nodes = 2259
+ number of edges = 55854
+after dropping entries:
+ number of nodes = 2259
+ number of edges = 53588
+after merging lines:
+ number of nodes = 2259
+ number of edges = 30402
+
+Finished at: 2013-10-26 06:51:28.118210
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz070901 at 2013-10-26 06:51:28.133835
+initial:
+ number of nodes = 368091
+ number of edges = 744904
+after mapping:
+ number of nodes = 364813
+ number of edges = 744904
+after dropping entries:
+ number of nodes = 4420
+ number of edges = 55424
+
+initial:
+ number of nodes = 4420
+ number of edges = 55424
+after mapping:
+ number of nodes = 4420
+ number of edges = 55424
+after merging lines:
+ number of nodes = 4420
+ number of edges = 55176
+
+initial:
+ number of nodes = 4420
+ number of edges = 55176
+after mapping:
+ number of nodes = 2242
+ number of edges = 55176
+after dropping entries:
+ number of nodes = 2242
+ number of edges = 53041
+after merging lines:
+ number of nodes = 2242
+ number of edges = 30466
+
+Finished at: 2013-10-26 07:04:25.426436
+
+
+     -DATA FILE : input/raw/10_2002-2007_exposures/fz071201 at 2013-10-26 07:04:25.457685
+initial:
+ number of nodes = 377270
+ number of edges = 759072
+after mapping:
+ number of nodes = 374049
+ number of edges = 759072
+after dropping entries:
+ number of nodes = 4473
+ number of edges = 56370
+
+initial:
+ number of nodes = 4473
+ number of edges = 56370
+after mapping:
+ number of nodes = 4473
+ number of edges = 56370
+after merging lines:
+ number of nodes = 4473
+ number of edges = 56058
+
+initial:
+ number of nodes = 4473
+ number of edges = 56058
+after mapping:
+ number of nodes = 2239
+ number of edges = 56058
+after dropping entries:
+ number of nodes = 2239
+ number of edges = 53621
+after merging lines:
+ number of nodes = 2239
+ number of edges = 30483
+
+Finished at: 2013-10-26 07:17:57.343150

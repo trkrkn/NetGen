@@ -1,0 +1,266 @@
+
+
+     -DATA FILE : output/20_fb/200803 at 2013-10-27 19:49:32.111852
+initial:
+ number of nodes = 2221
+ number of edges = 29766
+after mapping:
+ number of nodes = 2221
+ number of edges = 29766
+after dropping entries:
+ number of nodes = 1826
+ number of edges = 24475
+
+Finished at: 2013-10-27 19:49:44.158418
+
+
+     -DATA FILE : output/20_fb/200806 at 2013-10-27 19:49:44.174043
+initial:
+ number of nodes = 2224
+ number of edges = 30131
+after mapping:
+ number of nodes = 2224
+ number of edges = 30131
+after dropping entries:
+ number of nodes = 1812
+ number of edges = 24630
+
+Finished at: 2013-10-27 19:49:56.423729
+
+
+     -DATA FILE : output/20_fb/200809 at 2013-10-27 19:49:56.439354
+initial:
+ number of nodes = 2216
+ number of edges = 30274
+after mapping:
+ number of nodes = 2216
+ number of edges = 30274
+after dropping entries:
+ number of nodes = 1793
+ number of edges = 24558
+
+Finished at: 2013-10-27 19:50:08.657791
+
+
+     -DATA FILE : output/20_fb/200812 at 2013-10-27 19:50:08.673416
+initial:
+ number of nodes = 2433
+ number of edges = 30774
+after mapping:
+ number of nodes = 2433
+ number of edges = 30774
+after dropping entries:
+ number of nodes = 1795
+ number of edges = 24418
+
+Finished at: 2013-10-27 19:50:21.235594
+
+
+     -DATA FILE : output/20_fb/200903 at 2013-10-27 19:50:21.251219
+initial:
+ number of nodes = 2425
+ number of edges = 31179
+after mapping:
+ number of nodes = 2425
+ number of edges = 31179
+after dropping entries:
+ number of nodes = 1787
+ number of edges = 24730
+
+Finished at: 2013-10-27 19:50:33.875895
+
+
+     -DATA FILE : output/20_fb/200906 at 2013-10-27 19:50:33.875895
+initial:
+ number of nodes = 2397
+ number of edges = 30382
+after mapping:
+ number of nodes = 2397
+ number of edges = 30382
+after dropping entries:
+ number of nodes = 1772
+ number of edges = 24332
+
+Finished at: 2013-10-27 19:50:46.328702
+
+
+     -DATA FILE : output/20_fb/200909 at 2013-10-27 19:50:46.328702
+initial:
+ number of nodes = 2362
+ number of edges = 30471
+after mapping:
+ number of nodes = 2362
+ number of edges = 30471
+after dropping entries:
+ number of nodes = 1746
+ number of edges = 24146
+
+Finished at: 2013-10-27 19:50:58.875255
+
+
+     -DATA FILE : output/20_fb/200912 at 2013-10-27 19:50:58.875255
+initial:
+ number of nodes = 2372
+ number of edges = 31088
+after mapping:
+ number of nodes = 2372
+ number of edges = 31088
+after dropping entries:
+ number of nodes = 1744
+ number of edges = 24514
+
+Finished at: 2013-10-27 19:51:11.671803
+
+
+     -DATA FILE : output/20_fb/201003 at 2013-10-27 19:51:11.671803
+initial:
+ number of nodes = 2376
+ number of edges = 31152
+after mapping:
+ number of nodes = 2376
+ number of edges = 31152
+after dropping entries:
+ number of nodes = 1736
+ number of edges = 24502
+
+Finished at: 2013-10-27 19:51:24.327729
+
+
+     -DATA FILE : output/20_fb/201006 at 2013-10-27 19:51:24.343353
+initial:
+ number of nodes = 2363
+ number of edges = 30922
+after mapping:
+ number of nodes = 2363
+ number of edges = 30922
+after dropping entries:
+ number of nodes = 1736
+ number of edges = 24362
+
+Finished at: 2013-10-27 19:51:36.952406
+
+
+     -DATA FILE : output/20_fb/201009 at 2013-10-27 19:51:36.983655
+initial:
+ number of nodes = 2348
+ number of edges = 30200
+after mapping:
+ number of nodes = 2348
+ number of edges = 30200
+after dropping entries:
+ number of nodes = 1723
+ number of edges = 23811
+
+Finished at: 2013-10-27 19:51:49.311464
+
+
+     -DATA FILE : output/20_fb/201012 at 2013-10-27 19:51:49.358338
+initial:
+ number of nodes = 2343
+ number of edges = 30644
+after mapping:
+ number of nodes = 2343
+ number of edges = 30644
+after dropping entries:
+ number of nodes = 1717
+ number of edges = 23807
+
+Finished at: 2013-10-27 19:52:01.842393
+
+
+     -DATA FILE : output/20_fb/201103 at 2013-10-27 19:52:01.889267
+initial:
+ number of nodes = 2331
+ number of edges = 30193
+after mapping:
+ number of nodes = 2331
+ number of edges = 30193
+after dropping entries:
+ number of nodes = 1720
+ number of edges = 23824
+
+Finished at: 2013-10-27 19:52:14.185827
+
+
+     -DATA FILE : output/20_fb/201106 at 2013-10-27 19:52:14.217077
+initial:
+ number of nodes = 2323
+ number of edges = 30018
+after mapping:
+ number of nodes = 2323
+ number of edges = 30018
+after dropping entries:
+ number of nodes = 1717
+ number of edges = 23455
+
+Finished at: 2013-10-27 19:52:26.591760
+
+
+     -DATA FILE : output/20_fb/201109 at 2013-10-27 19:52:26.638634
+initial:
+ number of nodes = 2297
+ number of edges = 29813
+after mapping:
+ number of nodes = 2297
+ number of edges = 29813
+after dropping entries:
+ number of nodes = 1704
+ number of edges = 23296
+
+Finished at: 2013-10-27 19:52:39.013317
+
+
+     -DATA FILE : output/20_fb/201112 at 2013-10-27 19:52:39.060191
+initial:
+ number of nodes = 2300
+ number of edges = 30231
+after mapping:
+ number of nodes = 2300
+ number of edges = 30231
+after dropping entries:
+ number of nodes = 1702
+ number of edges = 23369
+
+Finished at: 2013-10-27 19:52:51.403625
+
+
+     -DATA FILE : output/20_fb/201203 at 2013-10-27 19:52:51.450498
+initial:
+ number of nodes = 2285
+ number of edges = 30258
+after mapping:
+ number of nodes = 2285
+ number of edges = 30258
+after dropping entries:
+ number of nodes = 1698
+ number of edges = 23538
+
+Finished at: 2013-10-27 19:53:04.043926
+
+
+     -DATA FILE : output/20_fb/201206 at 2013-10-27 19:53:04.059551
+initial:
+ number of nodes = 2279
+ number of edges = 29599
+after mapping:
+ number of nodes = 2279
+ number of edges = 29599
+after dropping entries:
+ number of nodes = 1698
+ number of edges = 23147
+
+Finished at: 2013-10-27 19:53:16.121742
+
+
+     -DATA FILE : output/20_fb/201209 at 2013-10-27 19:53:16.137366
+initial:
+ number of nodes = 2271
+ number of edges = 29504
+after mapping:
+ number of nodes = 2271
+ number of edges = 29504
+after dropping entries:
+ number of nodes = 1683
+ number of edges = 23119
+
+Finished at: 2013-10-27 19:53:28.262056
