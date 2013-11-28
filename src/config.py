@@ -78,13 +78,12 @@ out_file_name 		= 'clean_data_time_1'
 out_file_extension  	= 'txt'
 out_file_delimiter 	= ','
 out_file_missing_value 	= ''
-out_file_single_file   = 'on'
-out_file_separate_line = ' '
+out_file_single_file   = 'off'
+out_file_separate_line = ''
 #defining a separation between the results of the datasets
 #   'title' will write down the name of the input file
 #   '' will not do any separation
 #   or write 
-
 
 # ==========================================
 # Mapping information 
@@ -107,13 +106,14 @@ mapping_replace_ids         = 'on'
 mapping_kept_id_position    = '1'
 mapping_lost_id_position    = '0'
 
+#-------------------------------------------
+
 # 2 - Target Position
 #       specify if there is only one specific position 
 #       in the clean data structure that needs to be mapped
 #       if yes: give the names of the column
 #       if no: put 'all'
 mapping_target_position  = 'all'
-# (ex: ['TO','off','off'])
 
 #-------------------------------------------
 
@@ -122,27 +122,22 @@ mapping_target_position  = 'all'
 #       'off' if only entries containing ids from the file should be kept
 mapping_drop_unreferenced_entries   = 'off'
 mapping_target_unreferenced_entries = 'To'
-#['off','on','on']
-#OLD: mapping_keep_all         = ['off','on','on']
-#  (ex: ['off','on','on'])
 
 #-------------------------------------------
 
 # 4 -  Drop Ghost
 # 		mappings that lead to empty entries
-# 		! implicitly : ''
-# 		to add: allow to specify missing values
+
 mapping_drop_ghosts 	= 'off'
-#['off', 'on','off']
 
 #-------------------------------------------
 
 # 5 -  Remove Duplicates
 #       indicate wether if entries with some common values
 #       only one needs to be kept     
-mapping_remove_duplicates       = 'off'
+mapping_remove_duplicates       = 'on'
 mapping_target_duplicates_set   = 'From, To, Exposure'
-#       if yes: give the set of variables to consider the duplication
+#       if on: give the set of variables to consider the duplication
 #               'ALL' for the comparison to occur for every item in the column
 
 #-------------------------------------------
@@ -150,11 +145,9 @@ mapping_target_duplicates_set   = 'From, To, Exposure'
 # 6 - Merge entries
 #       activate merging of entries 
 mapping_merge_entries       = 'off'
-#['off','on','on']
 mapping_target_merge_set    = 'From,To'
 #       if yes: give the set of variables to consider the duplication
 #               'ALL' for the comparison to occur for every item in the column
-# (ex: ['off','on','on'])   
 
 #-------------------------------------------
 
@@ -165,11 +158,11 @@ mapping_target_merge_set    = 'From,To'
 #       'same'  = keep the value if it is the same in both cases
 #       'avg'    = computes the average
 #       for each cell enter the name and the command
-#           if nothing is specified for one cell: defautl command = 'same'
+#           if nothing is specified for one cell: default command = 'same'
 
 mapping_commands         = 'Exposure : avg'
 
-
+#TO ADD: allow the user to define what the default command should be
 #-------------------------------------------
 # ==========================================
 # ==========================================
