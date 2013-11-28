@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+"""
+NetGen is a tool for financial network analysis
+Copyright (C) 2013 Tarik Roukny (tarikroukny@gmail.com)
+"""
 # ==========================================
 #   Libraries and Packages
 import csv
