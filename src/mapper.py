@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+"""
+NetGen is a tool for financial network analysis
+Copyright (C) 2013 Tarik Roukny (tarikroukny@gmail.com)
+"""
 # ==========================================
 #   Libraries and Packages
 # ==========================================
@@ -259,36 +262,17 @@ class Mapper:
                 if (non_empty):
                     if defining_set in merged_dict:
                         p = merged_dict[defining_set]
-#                        (self.data[i][0],self.data[i][1])]
                         for e in range(len(self.data[i])):
                             index = str(e)
                             if index in self.commands:
                                 command                   = self.commands [index]
                                 merged_list[p][e]         = self.apply_command(command, merged_list[p][e], self.data[i][e], counter[p])
-#                        for e in range(len(self.commands)):
-#                            print e
-#                            command                     = self.commands [str(2+e)]
-#                            merged_list[p][2+e]         = self.apply_command(command, merged_list[p][2+e], self.data[i][2+e], counter[p])
                         counter [p]     += 1
                         
                     else:
                         merged_list.append(self.data[i])
                         merged_dict[defining_set] = len(merged_list)-1
                         counter.append(1)
-                        
-                        
-#                if '' != self.data[i][0] and '' != self.data[i][1]:
-#                    if (self.data[i][0],self.data[i][1]) in merged_dict:
-#                        p = merged_dict[(self.data[i][0],self.data[i][1])]
-#                     
-#                        for e in range(len(self.commands)):
-#                            command                     = self.commands [str(2+e)]
-#                            merged_list[p][2+e]         = self.apply_command(command, merged_list[p][2+e], self.data[i][2+e], counter[p])
-#                        counter [p]     += 1
-#                    else:
-#                        merged_list.append(self.data[i])
-#                        merged_dict[(self.data[i][0],self.data[i][1])] = len(merged_list)-1
-#                        counter.append(1)
                         
             return merged_list
 
@@ -356,24 +340,6 @@ class Mapper:
                                 result = val_2
                         else:
                                 result = val_1
-
-
-##            if val_1 == 'NA' or val_2 == 'NA' or val_1 == '' or val_2 == '':
-##                result = 'NA'
-##
-##            else:
-##
-##                if command == '+':
-##                    result = float(val_2) + float(val_1)
-##                else:
-##                    if command == 'same':
-##                        if val_2 == val_1:
-##                            result = val_1
-##                        else:
-##                            result = 'NA'
-##                    else:
-##                        if command == 'avg':
-##                            result = (float(val_1)*coeficient + float(val_2))/(coeficient+1)
 
             return result
 
