@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+"""
+NetGen is a tool for financial network analysis
+Copyright (C) 2013 Tarik Roukny (tarikroukny@gmail.com)
+"""
 # ==========================================
 #   Libraries and Packages
 import sys
@@ -8,14 +11,10 @@ import src.config     as config
 from src.analyzer     import Analyzer
 from datetime         import datetime
 
-#TO DROP:
-#import os
-#from src.file_handler import FileHandler
-# import package.networkx as nx
 # ==========================================
 
 print ("\n\n---------------------------------------------------------------------------------------------------------------")
-print ("     		NetGen    		     		     		     		     		")
+print ("     		NetGen  Beta   		     		     		     		     		")
 print ("---------------------------------------------------------------------------------------------------------------\n")
 
 
