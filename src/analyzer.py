@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+"""
+NetGen is a tool for financial network analysis
+Copyright (C) 2013 Tarik Roukny (tarikroukny@gmail.com)
+"""
 # ==========================================
 #   Libraries and Packages
 from src.file_handler           import FileHandler
@@ -195,7 +198,7 @@ class Analyzer:
                 # 6 - get the translated commands
                 commands = self.get_commands(commands, target_merge_set_index)
                     
-                # 6 - initialize a mapper with all info
+                # 7 - initialize a mapper with all info
                 mapper      = Mapper(list(self.clean_data_handler.data_final), 
                                                                 mapper_data_handler.data,
                                                                 replace_ids,
