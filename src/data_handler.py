@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+"""
+NetGen is a tool for financial network analysis
+Copyright (C) 2013 Tarik Roukny (tarikroukny@gmail.com)
+"""
 # ==========================================
 #   Libraries and Packages
 from datetime import datetime
@@ -43,11 +46,11 @@ class DataHandler:
         # -------------------------------------------------------------
         #  
         #  structure_data ()
-        #  -- in progress --
+        # 
         # -------------------------------------------------------------
 
         def structure_data(self):
-                # NO BOGUS DETECTION!
+                # TO ADD: Bogus detection
                 for data_line in self.data:
                         l = []
                         i = 0
@@ -64,7 +67,7 @@ class DataHandler:
         # -------------------------------------------------------------
         # 
         #  clean_data (raw_structure)
-        #  -- in progress --
+        #  
         # -------------------------------------------------------------
 
         def clean_data(self, raw_structure):
