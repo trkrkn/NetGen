@@ -18,13 +18,12 @@ GNU General Public License for more details.
 # ==========================================
 
 in_file_directory       = 'input/toy_data/'
-in_file_name            = 'data_test'
-# ['data_test','data_test']
+in_file_name            = ['data_time_1','data_time_2']
 in_file_extension       = 'txt'
-in_file_delimiter       = '\t'
+in_file_delimiter       = ','
 #   'on' if entries are quoted:"entry_value"
 in_file_quote           = 'off'
-in_file_missing_value   = 'NA'
+in_file_missing_value   = ''
 
 
 # ==========================================
@@ -86,13 +85,13 @@ clean_data_structure = [
 # Out-file information
 # ==========================================
 
-out_file_directory 		= 'output/'
-out_file_name 			= 'clean_data_time_1'
+out_file_directory 	= 'output/'
+out_file_name 		= ['data_time_1res','data_time_2res']
 out_file_extension  	= 'txt'
-out_file_delimiter 		= ','
+out_file_delimiter 	= ','
 out_file_missing_value 	= ''
-out_file_single_file   	= 'off'
-out_file_separate_line 	= ''
+out_file_single_file   = 'off'
+out_file_separate_line = ''
 #defining a separation between the results of the datasets
 #   'title' will write down the name of the input file
 #   '' will not do any separation
@@ -157,7 +156,7 @@ mapping_target_duplicates_set   = 'From, To, Exposure'
 
 # 6 - Merge entries
 #       activate merging of entries 
-mapping_merge_entries       = 'off'
+mapping_merge_entries       = 'on'
 mapping_target_merge_set    = 'From,To'
 #       if yes: give the set of variables to consider the duplication
 #               'ALL' for the comparison to occur for every item in the column
@@ -173,23 +172,9 @@ mapping_target_merge_set    = 'From,To'
 #       for each cell enter the name and the command
 #           if nothing is specified for one cell: default command = 'same'
 
-mapping_commands         = 'Exposure : avg'
+mapping_commands         = 'Exposure : +'
 
 #TO ADD: allow the user to define what the default command should be
 #-------------------------------------------
-# ==========================================
-# ==========================================
-
-# ==========================================
-# Mapping information 
-# ==========================================
-
-network_analysis 	= 'on'
-network_out_node 	= 'From'
-network_in_node		= 'To'
-network_is_directed = 'on'
-network_is_weighted = 'on'
-network_edge_weight = 'Exposure'
-
 # ==========================================
 # ==========================================

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="directed" mode="static">
+    <nodes>
+      <node id="0004" label="0004" />
+      <node id="0005" label="0005" />
+      <node id="0006" label="0006" />
+      <node id="0001" label="0001" />
+      <node id="0002" label="0002" />
+      <node id="0003" label="0003" />
+      <node id="1008" label="1008" />
+    </nodes>
+    <edges>
+      <edge id="0" source="0004" target="0005" weight="23.0" />
+      <edge id="1" source="0004" target="0006" weight="310.0" />
+      <edge id="2" source="0004" target="1008" weight="2.0" />
+      <edge id="3" source="0004" target="0003" weight="90.0" />
+      <edge id="4" source="0005" target="0004" weight="24.0" />
+      <edge id="5" source="0001" target="0004" weight="0.0" />
+      <edge id="6" source="0001" target="0005" weight="9.0" />
+      <edge id="7" source="0001" target="0002" weight="100.02" />
+      <edge id="8" source="0001" target="0003" weight="80.9" />
+      <edge id="9" source="0002" target="0006" weight="24.0" />
+      <edge id="10" source="0002" target="0001" weight="200.0" />
+      <edge id="11" source="0003" target="0006" weight="200.0" />
+      <edge id="12" source="0003" target="0002" weight="870.0" />
+    </edges>
+  </graph>
+</gexf>

@@ -1,20 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-NetGen is a tool for financial network analysis
-Copyright (C) 2013 Tarik Roukny (troukny@ulb.ac.be)
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, version 3 of the License.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-"""
 # ==========================================
 #   Libraries and Packages
+import csv
 from datetime import datetime
 # ==========================================
 
@@ -55,11 +44,11 @@ class DataHandler:
         # -------------------------------------------------------------
         #  
         #  structure_data ()
-        # 
+        #  -- in progress --
         # -------------------------------------------------------------
 
         def structure_data(self):
-                # TO ADD: Bogus detection
+                # NO BOGUS DETECTION!
                 for data_line in self.data:
                         l = []
                         i = 0
@@ -76,7 +65,7 @@ class DataHandler:
         # -------------------------------------------------------------
         # 
         #  clean_data (raw_structure)
-        #  
+        #  -- in progress --
         # -------------------------------------------------------------
 
         def clean_data(self, raw_structure):
@@ -97,9 +86,17 @@ class DataHandler:
                                         else:
                                                 l.append(self.cast_entry(data_line[int(pos/2)],self.structure[i+1]))
                                 else:
-                                    l.append('ERROR - No Matching for the two structures')
-                                    print ("WARNING: no matching for {0} in the raw structure".format(structure[i]))
-
+                                        # new type of element
+                                        format          = self.structure[i+1][0]
+                                        instruction     = self.structure[i+1].split()[2:]
+                                        j = 0
+                                        while j in range(len(instruction)):
+                                                if instruction[j] in config.raw_data:
+                                                        pos             = [a for a,x in enumerate(raw_structure) if x==instruction[j]][0]
+                                                        instruction[j]  = data_line[pos/2]
+                                                j = j+1
+                                        result = operation(instruction,format)            
+                                        l.append(self.cast_entry(result, self.structure[i+1]))
                                 i = i+2
                         if input == True: 
                                 self.data_final.append(l)

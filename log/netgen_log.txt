@@ -3,7 +3,7 @@
 ++++++++++++++++++++++++++++++++ 
 
 
-     - DATA FILE : input/data_test at 2013-11-28 17:07:29.411382
+     - DATA FILE : input/toy_data/data_test at 2014-06-04 17:27:03.291248
 initial:
  number of nodes = 12
  number of edges = 13
@@ -11,15 +11,4 @@ after mapping:
  number of nodes = 7
  number of edges = 13
 
-Finished at: 2013-11-28 17:07:29.411858
-
-
-     - DATA FILE : input/data_test at 2013-11-28 17:07:29.411897
-initial:
- number of nodes = 12
- number of edges = 13
-after mapping:
- number of nodes = 7
- number of edges = 13
-
-Finished at: 2013-11-28 17:07:29.412327
+Finished at: 2014-06-04 17:27:03.331864

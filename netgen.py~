@@ -1,32 +1,21 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""
-NetGen is a tool for financial network analysis
-Copyright (C) 2013 Tarik Roukny (troukny@ulb.ac.be)
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, version 3 of the License.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-"""
 # ==========================================
 #   Libraries and Packages
 import sys
-import os
-import src.config           as config
-import src.netmint.netmint  as Netmint
+import src.config     as config
 from src.analyzer     import Analyzer
 from datetime         import datetime
 
-
+#TO DROP:
+#import os
+#from src.file_handler import FileHandler
+# import package.networkx as nx
 # ==========================================
 
 print ("\n\n---------------------------------------------------------------------------------------------------------------")
-print ("     		NetGen  v1.0   		     		     		     		     		")
+print ("     		NetGen     on GIT		     		     		     		     		")
 print ("---------------------------------------------------------------------------------------------------------------\n")
 
 
@@ -64,44 +53,6 @@ def get_entry_dict (vector, i, j):
                 # to add: verification
                         entry = vector[i][j]
         return entry
-
-def generate_config_netmint(in_file_directory, in_file_name, 
-                    out_file_directory, is_weighted, weight_id, is_directed):
-
-    file = open (os.getcwd() + "/src/netmint/src/config.py", 'w')
-    file.write("#!/usr/bin/pythonw\n# -*- coding: utf-8 -*-\n")
-    file.write("in_file_directory = \'{0}networks/\'\n".format(in_file_directory))
-    file.write("in_file_name = \'{0}\'\n".format(in_file_name))
-
-    file.write("out_file_directory = \'{0}\'\n".format(out_file_directory))
-
-    str = 'no'
-    if is_weighted == 'on':
-        str = 'yes' 
-    file.write("is_weighted = \'{0}\'\n".format(str))
-    file.write("weight_id = 'weight'\n")
-        # \'{0}\'\n".format(weight_id))
-
-    str = 'no'
-    if is_directed == 'on':
-        str = 'yes'
-    file.write("is_directed = \'{0}\'\n".format(str))
-
-    file.write("node_fitness = \'no\'\n")
-    file.write("fitness_id = \'node\'\n")
-
-    file.write("full_analysis = \'yes\'\n")
-    file.write("aggregate_number = \'3\'\n")
-    file.close()
-
-def launch_netmint(in_file_directory, in_file_name, 
-                    out_file_directory, is_directed, is_weighted, weight_id):
-    
-    generate_config_netmint(in_file_directory, in_file_name, out_file_directory, is_weighted, weight_id, is_directed)
-
-    os.system(os.getcwd() + "/src/netmint/netmint.py")
-
-
 
 #-------------------------------------------------------------------------
 #
@@ -141,11 +92,6 @@ if __name__ == '__main__':
                                         config.mapping_merge_entries,
                                         config.mapping_target_merge_set,
                                         config.mapping_commands ]
-
-        # information related to the network analysis
-        network_info                = [ config.network_analysis, config.network_out_node, 
-                                        config.network_in_node, config.network_is_directed, 
-                                        config.network_is_weighted, config.network_edge_weight ]
 
         n_in_files = 0
         if isinstance(file_info[1], str):
@@ -295,27 +241,6 @@ if __name__ == '__main__':
 
             _Analyzer.save_clean_data()
 
-            ##############################
-            # Check for network analysis #
-            ##############################  
-
-            network_analysis        = get_entry_str(network_info [0], i, 0)
-            network_out_node        = get_entry_str(network_info [1], i, 0)
-            network_in_node         = get_entry_str(network_info [2], i, 0)
-            network_is_directed     = get_entry_str(network_info [3], i, 0)
-            network_is_weighted     = get_entry_str(network_info [4], i, 0)
-            network_edge_weight     = get_entry_str(network_info [5], i, 0)          
-
-            if network_analysis == 'on':
-                print ("Step 4. CREATING THE NETWORK\n")
-                network_directory = out_file_directory + '/networks/'
-                if not os.path.exists(network_directory):
-                    os.makedirs(network_directory)
-                _Analyzer.create_network( network_directory, 
-                                            network_out_node, network_in_node, 
-                                            network_is_directed, network_is_weighted, 
-                                            network_edge_weight)
-
             #####################
             # End               #
             #####################
@@ -329,20 +254,7 @@ if __name__ == '__main__':
 
             # for log
             log_text += 'Finished at: {0}\n'.format(str(finish))
-
-        ########################################
-        # Running the overall network analysis #
-        ########################################
-
-        if network_analysis == 'on':
-            print ("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-            print ("                Starting the Network Analysis " )
-            print ("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n")
-
-            launch_netmint(file_info[6], file_info[7],
-                            file_info[6], config.network_is_directed, 
-                            config.network_is_weighted, config.network_edge_weight)
-
+        
         print ("---------------------------------------------------------------------------------------------------------------")
         print ("     		PROCESS TERMINATED")
         print ("---------------------------------------------------------------------------------------------------------------\n")

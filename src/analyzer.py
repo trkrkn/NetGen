@@ -2,14 +2,25 @@
 # -*- coding: utf-8 -*-
 """
 NetGen is a tool for financial network analysis
-Copyright (C) 2013 Tarik Roukny (tarikroukny@gmail.com)
+Copyright (C) 2013 Tarik Roukny (troukny@ulb.ac.be)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 3 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 """
 # ==========================================
 #   Libraries and Packages
 from src.file_handler           import FileHandler
 from src.data_handler           import DataHandler
 from src.mapper                 import Mapper
+from src.network_handler        import NetworkHandler
 import sys
+import networkx as nx
 # ==========================================
 
 class Analyzer:
@@ -226,6 +237,7 @@ class Analyzer:
                 # take all positions
                 indeces = range(len(self.clean_data_handler.structure)/2)
             else:
+
                 # remove spaces before or after the ','
                 positions = positions.replace(', ',',')
                 positions = positions.replace(' ,',',')
@@ -300,3 +312,32 @@ class Analyzer:
 
         def get_merged_data(self):
                 return self.Merger.data_merged
+
+
+        # -------------------------------------------------------------
+        # 
+        #  create_network (out_node, in_node, is_directed,
+        #                       is_weighted, edge_weight)
+        # 
+        # -------------------------------------------------------------
+
+        def create_network(self, network_directory, network_out_node, network_in_node, 
+                                            network_is_directed, network_is_weighted, 
+                                            network_edge_weight):
+
+            # [out_node_index,in_node_index]       = self.get_indeces_from_clean_structure([network_out_node,network_in_node])
+            out_node_index       = self.get_indeces_from_clean_structure(network_out_node)[0]
+            in_node_index       = self.get_indeces_from_clean_structure(network_in_node)[0]
+            
+            if network_is_weighted == True:
+                edge_weight = self.get_indeces_from_clean_structure(network_edge_weight)[0]
+            else:
+                edge_weight = -1
+
+            self.network_handler = NetworkHandler(network_directory, self.out_file_handler.file_name,
+                                            self.out_file_handler.data, 
+                                            out_node_index, in_node_index, 
+                                            network_is_directed, network_is_weighted, 
+                                            edge_weight)
+
+

@@ -2,7 +2,16 @@
 # -*- coding: utf-8 -*-
 """
 NetGen is a tool for financial network analysis
-Copyright (C) 2013 Tarik Roukny (tarikroukny@gmail.com)
+Copyright (C) 2013 Tarik Roukny (troukny@ulb.ac.be)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, version 3 of the License.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
 """
 # ==========================================
 #   Libraries and Packages
@@ -248,17 +257,16 @@ class Mapper:
             merged_dict = dict()
             merged_list = []
 
-            for i in range(len(self.data)):
-                
+            for i in range(len(self.data)):  
                 non_empty = True
                 defining_set = []
                 
                 for j in self.target_merge_set:
-                      if self.data[i][j] == '':
+                    if self.data[i][j] == '':
                           non_empty = False
-                          defining_set.append(self.data[i][j])
+                    defining_set.append(self.data[i][j])
                 defining_set = tuple(defining_set)
-                
+
                 if (non_empty):
                     if defining_set in merged_dict:
                         p = merged_dict[defining_set]
