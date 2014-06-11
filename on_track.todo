@@ -1,0 +1,68 @@
+TODO:
+-20140605
+
+on website:
+	change layout for buttons (other then -primary) -- css
+
+on user manual:
+	REWRITE IT!
+
+on config tool:
+	BUG: back does not work properly and yields many issues - network fields - checkboxes - change in number of infiles - etc.
+
+on config tool:
+	change the wording 
+	change the final step (launching the webapp)
+
+on config tool:
+	when defining fields for the out-file structure:
+		only allow for fields defined in the in-file structure -- LISTE DEROULANTE
+
+on config tool + netgen:
+	for the oufile: 
+		add the possibility to keep in the first row the names of the fields
+	for the infile:
+		add the possibility to generate the structure based on the first row of the files
+
+for the web app:
+	make "try except" cases to return bugs and issues in the log file
+
+config:
+	let the possibility for the user to make a default mapping command (applied to all fields)
+
+for the server:
+	garbage collector - project cleaner
+
+for the config tool:
+	check the out-file fields reference to the in-file files: 
+		there was an issue when more then 1 file -- Valentin
+
+on site:
+	@ BuBa:
+		test the online configuration tool
+		test the new version of netgen 
+
+syncing the new config file:
+	to add in netgen: 
+		new field "all". "all" = take all the outfiles
+		new parameter : "mapping_out_files_name" to specify the relation btw mapping process and out files. 
+
+on netgen: file and data handler:
+	expand the cases of different formats (csv, xls, etc.)
+
+on netmint: 
+	allow for a characterization of more fields : 
+		more then 1 info in edges 
+		info on the nodes
+
+on netgen-fullweb:
+	revise val's code for the generation of zip files etc.
+
+on GitHub:
+	update new version of NetGen
+
+SOLVED ISSUES:
+- 20140530
+	error on the merging data:
+		mis-tabbed line: 268 in mapping.py
+	assosciation of NetGen and NetMint
