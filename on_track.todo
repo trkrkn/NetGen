@@ -1,4 +1,9 @@
 TODO:
+-20140613:
+
+on configtool local:
+	does not generate the config.py file [see github commit]
+
 -20140605
 
 on website:
@@ -7,14 +12,12 @@ on website:
 on user manual:
 	REWRITE IT!
 
-on config tool:
+[done 20140612] on config tool:
 	BUG: back does not work properly and yields many issues - network fields - checkboxes - change in number of infiles - etc.
 
 on config tool:
 	change the wording 
 	change the final step (launching the webapp)
-
-on config tool:
 	when defining fields for the out-file structure:
 		only allow for fields defined in the in-file structure -- LISTE DEROULANTE
 
@@ -24,19 +27,18 @@ on config tool + netgen:
 	for the infile:
 		add the possibility to generate the structure based on the first row of the files
 
-for the web app:
+on web app:
 	make "try except" cases to return bugs and issues in the log file
 
-config:
+on config file:
 	let the possibility for the user to make a default mapping command (applied to all fields)
 
-for the server:
+on full-web version:
 	garbage collector - project cleaner
 
-for the config tool:
+[done 20140612 - related to the BACK issue] on config tool:
 	check the out-file fields reference to the in-file files: 
 		there was an issue when more then 1 file -- Valentin
-
 on site:
 	@ BuBa:
 		test the online configuration tool
@@ -58,7 +60,7 @@ on netmint:
 on netgen-fullweb:
 	revise val's code for the generation of zip files etc.
 
-on GitHub:
+[done 20140610] on GitHub:
 	update new version of NetGen
 
 SOLVED ISSUES:
