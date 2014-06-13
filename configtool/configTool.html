@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NetGen - Online Configuration </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap_custom.css" media="screen">
+	<link rel="shortcut icon" href="icone.ico" type="image/x-icon"/> 
+	<link rel="icon" href="bootstrap/img/icone.ico" type="image/x-icon"/>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+     HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../bower_components/bootstrap/assets/js/html5shiv.js"></script>
+      <script src="../bower_components/bootstrap/assets/js/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+  <body>
+
+   <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="navbar-brand"><p><img  src="bootstrap/img/icone.png" width="3%" alt=""/><strong> NetGen</strong></p></a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="mailto:troukny@ulb.ac.be" target="_blank"><p><i class="glyphicon glyphicon-envelope"></i> Contact us</p></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+   
+	
+	
+	
+	
+	
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ <div class="container">
+   </br>
+   </br>
+
+      <!-- Forms
+      ================================================== -->
+      <div class="bs-docs-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="page-header">
+              <h1 id="forms">Configuration Tool</h1>
+            </div>
+          </div>
+        </div>
+		
+		<!--/////////////////////       PROGRESS BAR      ///////////////////////////////////////////////////////// -->
+		
+		<div class="row">
+          <div class="col-lg-12">
+		  
+			<div class="bs-example">
+              <div class="progress progress-striped active">
+                <div class="progress-bar" id="progress_bar" style="width: 00%;"></div>
+              </div>
+            </div>
+		  
+		  </div>
+		</div>
+        <div class="row">
+		
+		<!--/////////////////////       IN FILE INFO       ///////////////////////////////////////////////////////// -->
+		
+          <div class="col-lg-12" id="in_file_bigDiv" style="display:block">
+            <div class="well">
+              <form class="bs-example form-horizontal">
+                <fieldset>
+                  <legend>In-File Information</legend>
+				  
+				<div id="in_file_number_div">
+				  <div class="form-group">
+                    <label for="in_file_number" class="col-lg-2 control-label">Number</label>
+                    <div class="col-lg-10">
+                      <input type="number" class="form-control" id="in_file_number">
+					  <span class="help-block">Indicate the number of in-files</span>
+                    </div>
+                  </div>
+				  
+				  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                      <input type="button" id="continueBTN1" value="Continue" class="btn btn-primary" onclick="ClearLocalStorage();ShowHideDivIn();addFilesIn();checkBoxesRaw(1);checkBoxesClean(1);checkBoxesIn(1)">
+                    </div>
+                  </div>
+				
+				</div>
+				  
+				 <div id="in_file_information_div" style="display:none">
+				 
+
+				  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+		  
+		  <!--/////////////////////       RAW DATA STRUCTURE       ///////////////////////////////////////////////////////// -->
+		
+          <div class="col-lg-12" id="raw_file_bigDiv" style="display:none">
+            <div class="well">
+              <form class="bs-example form-horizontal">
+                <fieldset>
+                  <legend>Raw data structure</legend>
+		
+			<div id="raw_div_1">
+			<span class="help-block">Select files with the same raw structure</span>
+			
+			<div class="checkbox" id="checkboxRaw_div_1">
+                <label>
+                   <input type="checkbox" checked>File 1
+                </label>
+			</div>	
+			
+			</br>
+            <div class="bs-example table-responsive">
+              <table class="table table-striped table-bordered table-hover">
+                <!--<thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                  </tr>
+                </thead> -->
+                <tbody id="RawList1">
+                  <tr id="tr1_Raw1">
+                    <td><strong>Column #</strong></td>
+                    <td> 
+						1
+					</td>
+                  </tr>
+				  <tr id="tr2_Raw1">
+                    <td><strong>Name</strong></td>
+                    <td> 
+						<div class="form-group">
+							<div class="col-lg-12">
+							  <input type="text" class="form-control" id="tr1_Name_Raw1" placeholder="ex : From">
+							</div>
+						</div>
+					</td>
+                  </tr>
+				  <tr id="tr3_Raw1">
+                    <td><strong>Type</strong></td>
+                    <td>
+						<div class="form-group">
+							<div class="col-lg-12">
+								<select class="form-control" id="tr1_Type_Raw1">
+									<option>str</option>
+									<option>float</option>
+									<option>int</option>
+									<option>date</option>
+								</select>
+							</div>
+						</div>
+					</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+			      
+                  <div class="form-group">
+				    <div class="col-lg-10 col-lg-offset-2">
+					  <input type="button" id="removeBTN1" value="Remove field" class="btn btn-default" onclick="removeFieldRaw('tr1_Raw1',1)">
+                      <input type="button" id="addBTN1" value="Add field" class="btn btn-primary" onclick="addFieldRaw('tr1_Raw1',1)">
+					  </br></br>
+					  <input type="button" id="newRawStructureBTN1" value="Add structure" class="btn btn-primary" onclick="addDataStructureRaw(2)">
+					  <input type="button" id="removeRawStructureBTN1" value="Remove structure" class="btn btn-default" onclick="removeDataStructureRaw(1)">
+                    </div>
+				 </div>
+				
+			</div>
+			
+			<!-- 10 raw data structure maximum. kind of shells for raw data structure. Just add a div with updated id to deal with more different data structure -->
+			<div id="raw_div_2">
+			</div>
+			<div id="raw_div_3">
+			</div>
+			<div id="raw_div_4">
+			</div>
+			<div id="raw_div_5">
+			</div>
+			<div id="raw_div_6">
+			</div>
+			<div id="raw_div_7">
+			</div>
+			<div id="raw_div_8">
+			</div>
+			<div id="raw_div_9">
+			</div>
+			<div id="raw_div_10">
+			</div>
+			<div id="raw_div_11">
+			</div>
+			<div id="raw_div_12">
+			</div>
+			<div id="raw_div_13">
+			</div>
+			<div id="raw_div_14">
+			</div>
+			<div id="raw_div_15">
+			</div>
+			<div id="raw_div_16">
+			</div>
+			<div id="raw_div_17">
+			</div>
+			<div id="raw_div_18">
+			</div>
+			<div id="raw_div_19">
+			</div>
+			<div id="raw_div_20">
+			</div>
+			<div id="raw_div_21">
+			</div>
+			<div id="raw_div_22">
+			</div>
+			<div id="raw_div_23">
+			</div>
+			<div id="raw_div_24">
+			</div>
+			<div id="raw_div_25">
+			</div>
+			<div id="raw_div_26">
+			</div>
+			<div id="raw_div_27">
+			</div>
+			<div id="raw_div_28">
+			</div>
+			<div id="raw_div_29">
+			</div>
+			<div id="raw_div_30">
+			</div>
+			
+				<div class="form-group">
+					<div class="col-lg-10 col-lg-offset-2">
+					    <input type="button" id="continueBTN2" value="Back" class="btn btn-info" onclick="ShowHideDiv('raw_file_bigDiv','in_file_bigDiv');progressBarBack()">
+						<input type="button" id="submitStructureBTN" value="Submit" class="btn btn-primary" onclick="CheckRaw();">
+                    </div>
+                </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+		  
+		
+        </div>
+		
+		<div class="row">
+		
+		<!--/////////////////////       OUT FILE INFO       ///////////////////////////////////////////////////////// -->
+		  
+		  <div class="col-lg-12" id="out_file_bigDiv" style="display:none">
+		  
+            <div class="well">
+              <form class="bs-example form-horizontal">
+                <fieldset>
+                 <legend>Out-File Information</legend>
+				 
+				 <div id="out_file_pre_option">
+				 
+					 <div class="form-group">
+						<label class="col-lg-2 control-label">Single file</label>
+						<div class="col-lg-10">
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="out_file_single_file" id="optionSingleOn" value="on" checked="true">
+							  On
+							</label>
+						  </div>
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="out_file_single_file" id="optionSingleOff" value="off" checked="false">
+							  Off
+							</label>
+						  </div>
+						  <span class="help-block">Choose on if you want all your results in one single output file, choose off if you want as many output files as input files</span>
+						</div>
+					  </div>
+					 
+					<div class="form-group">
+						<div class="col-lg-10 col-lg-offset-2">
+						  <input type="button" id="continueBTN2" value="Back" class="btn btn-info" onclick="ShowHideDiv('out_file_bigDiv','raw_file_bigDiv');progressBarBack()">
+						  <input type="button" id="continueBTN2" value="Continue" class="btn btn-primary" onclick="ShowHideDivOut();checkBoxesOut(1);progressBarContinue();storeSingleFile()">
+						</div>
+                    </div>
+
+				 </div>
+				 
+				 <div id="out_file_information_div" style="display:none">
+				 
+
+				  
+				 </div>  <!-- fin div out_file_information_div -->
+				 
+				 
+                </fieldset>
+              </form>
+            </div>
+          </div>
+
+		
+		  
+ 	<!--/////////////////////       CLEAN DATA STRUCTURE       ///////////////////////////////////////////////////////// -->
+ 
+ <div class="col-lg-12" id="clean_file_bigDiv" style="display:none">
+            <div class="well">
+              <form class="bs-example form-horizontal">
+                <fieldset>
+                  <legend>Clean data structure</legend>
+		
+			<div id="clean_div_1">
+			<span class="help-block">Select files with the same clean structure</span>
+			
+			<div class="checkbox" id="checkboxClean_div_1">
+                <label>
+                   <input type="checkbox" checked>File 1
+                </label>
+			</div>	
+			
+			</br>
+            <div class="bs-example table-responsive">
+			<span class="help-block">Uncheck fields you don't want to keep</span>
+              <table class="table table-striped table-bordered table-hover">
+                <!--<thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                  </tr>
+                </thead> -->
+                <tbody id="CleanList1">
+                  <tr id="tr1_Clean1">
+                    <td><strong>Column #</strong></td>
+                    <td> 
+						1
+					</td>
+                  </tr>
+				  <tr id="tr2_Clean1">
+                    <td><strong>Name</strong></td>
+                    <td> 
+						<div class="form-group">
+							<div class="col-lg-12">
+							  <input type="text" class="form-control" id="tr1_Name_Clean1" placeholder="ex : From">
+							</div>
+						</div>
+					</td>
+                  </tr>
+				  <tr id="tr3_Clean1">
+                    <td><strong>Type</strong></td>
+                    <td>
+						<div class="form-group">
+							<div class="col-lg-12">
+								<select class="form-control" id="tr1_Type_Clean1">
+									<option>str</option>
+									<option>float</option>
+									<option>int</option>
+									<option>date</option>
+								</select>
+							</div>
+						</div>
+					</td>
+                  </tr>
+				  <tr id="tr4_Clean1">
+                    <td><strong>Kept</strong></td>
+                    <td>
+						<div class="form-group">
+							<div class="col-lg-12">
+								<input type="checkbox" id="tr1_checkBoxCleanKept_1" checked>
+							</div>
+						</div>
+					</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+			      
+                  <div class="form-group">
+				    <div class="col-lg-10 col-lg-offset-2">
+					  <input type="button" id="removeBTN1" value="Remove field" class="btn btn-default" onclick="removeFieldClean('tr1_Clean1',1)">
+                      <input type="button" id="addBTN1" value="Add field" class="btn btn-primary" onclick="addFieldClean('tr1_Clean1',1)">
+					  </br></br>
+					  <input type="button" id="newCleanStructureBTN1" value="Add structure" class="btn btn-primary" onclick="addDataStructureClean(2)">
+					  <input type="button" id="removeCleanStructureBTN1" value="Remove structure" class="btn btn-default" onclick="removeDataStructureClean(1)">
+                    </div>
+				 </div>
+				
+			</div>
+			
+			<!-- 10 clean data structure maximum. kind of shells for clean data structure. Just add a div with updated id to deal with more different data structure -->
+			<div id="clean_div_2">
+			</div>
+			<div id="clean_div_3">
+			</div>
+			<div id="clean_div_4">
+			</div>
+			<div id="clean_div_5">
+			</div>
+			<div id="clean_div_6">
+			</div>
+			<div id="clean_div_7">
+			</div>
+			<div id="clean_div_8">
+			</div>
+			<div id="clean_div_9">
+			</div>
+			<div id="clean_div_10">
+			</div>
+			<div id="clean_div_11">
+			</div>
+			<div id="clean_div_12">
+			</div>
+			<div id="clean_div_13">
+			</div>
+			<div id="clean_div_14">
+			</div>
+			<div id="clean_div_15">
+			</div>
+			<div id="clean_div_16">
+			</div>
+			<div id="clean_div_17">
+			</div>
+			<div id="clean_div_18">
+			</div>
+			<div id="clean_div_19">
+			</div>
+			<div id="clean_div_20">
+			</div>
+			<div id="clean_div_21">
+			</div>
+			<div id="clean_div_22">
+			</div>
+			<div id="clean_div_23">
+			</div>
+			<div id="clean_div_24">
+			</div>
+			<div id="clean_div_25">
+			</div>
+			<div id="clean_div_26">
+			</div>
+			<div id="clean_div_27">
+			</div>
+			<div id="clean_div_28">
+			</div>
+			<div id="clean_div_29">
+			</div>
+			<div id="clean_div_30">
+			</div>
+			
+				<div class="form-group">
+					<div class="col-lg-10 col-lg-offset-2">
+					    <input type="button" id="continueBTN2" value="Back" class="btn btn-info" onclick="ShowHideDiv('clean_file_bigDiv','out_file_bigDiv');progressBarBack()">
+						<input type="button" id="submitStructureBTN" value="Submit" class="btn btn-primary" onclick="CheckClean();setMappingInputstoNull();">
+                    </div>
+                </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+
+		  
+        </div>
+						<!--/////////////////////       MAPPING INFORMATION       ///////////////////////////////////////////////////////// -->
+		
+		<div class="row">
+          <div class="col-lg-12" id="mapping_info_bigDiv" style="display:none">
+            <div class="well">
+			<form class="bs-example form-horizontal">
+			<fieldset>
+				<legend>Mapping Information</legend>
+				
+				
+				<div id="mapping_file_pre_option">
+				 
+					 <div class="form-group">
+						<label class="col-lg-2 control-label">Mapping</label>
+						<div class="col-lg-10">
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="mapping_file_single_file" id="optionMappingOn" value="on" checked="true">
+							  Yes
+							</label>
+						  </div>
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="mapping_file_single_file" id="optionMappingOff" value="off" checked="false">
+							  No
+							</label>
+						  </div>
+						  <span class="help-block">Do you want to set mapping processes ? If not, you will directly access the config.py file.</span>
+						</div>
+					  </div>
+					 
+					<div class="form-group">
+						<div class="col-lg-10 col-lg-offset-2">
+						  <input type="button" id="continueBTN2" value="Back" class="btn btn-info" onclick="ShowHideDiv('mapping_info_bigDiv','clean_file_bigDiv');progressBarBack()">
+						  <input type="button" id="continueBTN2" value="Continue" class="btn btn-primary" onclick="ShowHideDivMapping();storeMappingChoice()">
+						</div>
+                    </div>
+
+				 </div>
+				
+			
+				<div id="mapping_file_number_div" style="display:none">
+				  <div class="form-group">
+                    <label for="mapping_file_number" class="col-lg-2 control-label">Number</label>
+                    <div class="col-lg-10">
+                      <input type="number" class="form-control" id="mapping_file_number">
+					  <span class="help-block">Indicate the number of mapping-files. If you indicate 0, you will have to skip the replacing values process that uses mapping files.</span>
+                    </div>
+                  </div>
+				  
+				  <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+					  <input type="button" id="continueBTN2" value="Back" class="btn btn-info" onclick="ShowHideDiv('mapping_file_number_div','mapping_file_pre_option')">
+                      <input type="button" id="continueBTN2" value="Continue" class="btn btn-primary" onclick="ShowHideDivNumberMapping();">
+                    </div>
+                  </div>
+				
+				</div>
+				
+				
+				<div id="mapping_file_information_div" style="display:none">
+				
+
+				
+				</div>
+				
+					
+		</fieldset>
+		</form>
+            
+          </div>
+		  		  
+		  
+        </div>
+		
+		
+      
+	  
+	  
+	  
+	  						<!--/////////////////////       MAPPING STRUCTURE       ///////////////////////////////////////////////////////// -->
+		
+		
+          <div class="col-lg-12" id="mapping_structure_bigDiv" style="display:none">
+            <div class="well">
+			<form class="bs-example form-horizontal">
+			<fieldset>
+				<legend>Mapping Structure</legend>
+				
+             <div id="mapping_struc_div_1">
+			<span class="help-block">Select files with the same mapping structure</span>
+			
+			<div class="checkbox" id="checkboxMappingStruc_div_1">
+                <label>
+                   <input type="checkbox" checked>Mapping file 1
+                </label>
+			</div>	
+			
+			</br>
+            <div class="bs-example table-responsive">
+              <table class="table table-striped table-bordered table-hover">
+                <!--<thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                  </tr>
+                </thead> -->
+                <tbody id="MappingStrucList1">
+                  <tr id="tr1_MappingStruc1">
+                    <td><strong>Column #</strong></td> 
+                    <td> 
+						1
+					</td>
+                  </tr>
+				  <tr id="tr2_MappingStruc1">
+                    <td><strong>Name</strong></td>
+                    <td> 
+						<div class="form-group">
+							<div class="col-lg-12">
+							  <input type="text" class="form-control" id="tr1_Name_Mapping1" placeholder="ex : From">
+							</div>
+						</div>
+					</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+			      
+                  <div class="form-group">
+				    <div class="col-lg-10 col-lg-offset-2">
+					  <input type="button" id="removeBTN1" value="Remove field" class="btn btn-default" onclick="removeFieldMappingStruc('tr1_MappingStruc1',1)">
+                      <input type="button" id="addBTN1" value="Add field" class="btn btn-primary" onclick="addFieldMappingStruc('tr1_MappingStruc1',1)">
+					  </br></br>
+					  <input type="button" id="newMappingStrucStructureBTN1" value="Add structure" class="btn btn-primary" onclick="addDataStructureMappingStruc(2)">
+					  <input type="button" id="removeMappingStrucStructureBTN1" value="Remove structure" class="btn btn-default" onclick="removeDataStructureMappingStruc(1)">
+                    </div>
+				 </div>
+				
+			</div>
+			
+			<!-- 10 MappingStruc data structure maximum. kind of shells for MappingStruc data structure. Just add a div with updated id to deal with more different data structure -->
+			<div id="mapping_struc_div_2">
+			</div>
+			<div id="mapping_struc_div_3">
+			</div>
+			<div id="mapping_struc_div_4">
+			</div>
+			<div id="mapping_struc_div_5">
+			</div>
+			<div id="mapping_struc_div_6">
+			</div>
+			<div id="mapping_struc_div_7">
+			</div>
+			<div id="mapping_struc_div_8">
+			</div>
+			<div id="mapping_struc_div_9">
+			</div>
+			<div id="mapping_struc_div_10">
+			</div>
+			<div id="mapping_struc_div_11">
+			</div>
+			<div id="mapping_struc_div_12">
+			</div>
+			<div id="mapping_struc_div_13">
+			</div>
+			<div id="mapping_struc_div_14">
+			</div>
+			<div id="mapping_struc_div_15">
+			</div>
+			<div id="mapping_struc_div_16">
+			</div>
+			<div id="mapping_struc_div_17">
+			</div>
+			<div id="mapping_struc_div_18">
+			</div>
+			<div id="mapping_struc_div_19">
+			</div>
+			<div id="mapping_struc_div_20">
+			</div>
+			<div id="mapping_struc_div_21">
+			</div>
+			<div id="mapping_struc_div_22">
+			</div>
+			<div id="mapping_struc_div_23">
+			</div>
+			<div id="mapping_struc_div_24">
+			</div>
+			<div id="mapping_struc_div_25">
+			</div>
+			<div id="mapping_struc_div_26">
+			</div>
+			<div id="mapping_struc_div_27">
+			</div>
+			<div id="mapping_struc_div_28">
+			</div>
+			<div id="mapping_struc_div_29">
+			</div>
+			<div id="mapping_struc_div_30">
+			</div>
+			
+				<div class="form-group">
+					<div class="col-lg-10 col-lg-offset-2">
+						<input type="button" id="continueBTN2" value="Back" class="btn btn-info" onclick="ShowHideDiv('mapping_structure_bigDiv','mapping_info_bigDiv');progressBarBack()">
+						<input type="button" id="submitStructureBTN" value="Submit" class="btn btn-primary" onclick="CheckMappingStructures();">
+                    </div>
+                </div>
+			
+			
+             </fieldset>
+		</form>
+            
+          </div>
+		  		  
+		  
+        </div>
+		
+		
+      </div>
+	
+	  
+	  
+	  	 <!-- ////////////////////////////// MAPPING PROCESSES /////////////////////  -->
+	  	<div class="row">
+          <div class="col-lg-12" id="mapping_processes_bigDiv" style="display:none">
+            <div class="well">
+			<form class="bs-example form-horizontal">
+			<fieldset>
+				<legend>Mapping processes</legend>
+
+			
+				<div id="mapping_file_processes">
+
+					<div class="form-group">
+						<div class="col-lg-10 col-lg-offset-2">
+						  <input type="button" id="continueBTN2" value="New mapping process" class="btn btn-primary" onclick="ShowHideDivMappingChoice();storeNbrOfProcesses(1);">
+						  <input type="button" id="continueBTN2" value="Back" class="btn btn-info" onclick="ShowHideDivProcessBack()">
+						  </br>
+						  </br>
+						  <input type="button" id="continueBTN2" value="End configuration !" class="btn btn-success" onclick="ShowHideDiv('mapping_processes_bigDiv','network_analysis_pre');progressBarContinue();submitMappingProcesses()">
+						</div>
+                    </div>
+					
+				</div>
+				
+				<div id="mapping_file_settings">
+					
+					
+				
+				</div>
+				
+				<div id="out_file_choice_div">
+					
+					
+				
+				</div>
+				
+				
+				
+				 
+	
+		</fieldset>
+		</form>
+            
+          </div>
+		  		  
+		  
+        </div>
+
+				
+		
+      </div>
+	  
+	  
+	  
+	  
+	  <!-- ////////////////////////////// Replacing values ///////////////////// -->
+	  	<div class="row">
+          <div class="col-lg-12" id="replacing_div" style="display:none">
+            <div class="well">
+			<form class="bs-example form-horizontal">
+			<fieldset>
+				<legend>Replacing values</legend>
+
+			
+				<div id="mapping_file_replace_pre">
+				 
+					 <div class="form-group">
+						<label class="col-lg-2 control-label">Replace values</label>
+						<div class="col-lg-10">
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="mapping_file_replace_radio" id="mapping_file_replace_on" value="on" checked="true">
+							  On
+							</label>
+						  </div>
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="mapping_file_replace_radio" id="mapping_file_replace_off" value="off" checked="false">
+							  Off
+							</label>
+						  </div>
+						  <span class="help-block">Choose on if you want to replace values present in the data given the mapping list of the mapping file.</span>
+						</div>
+					  </div>
+					 
+					<div class="form-group">
+						<div class="col-lg-10 col-lg-offset-2">
+						<input type="button" id="continueBTN2" value="Back" class="btn btn-info" onclick="ShowHideDiv('replacing_div','mapping_file_settings')">
+						  <input type="button" id="continueBTN2" value="Continue" class="btn btn-primary" onclick="OnOff('mapping_file_replace_on','mapping_file_replace_off','mapping_file_replace_pre','mapping_file_replace_info','replacing_div','dropping_div')">
+						</div>
+                    </div>
+					
+				</div>
+
+				 
+				 
+				 <div id="mapping_file_replace_info" style="display:none">
+				 
+					
+					
+				 </div>
+				 
+	
+		</fieldset>
+		</form>
+            
+          </div>
+		  		  
+		  
+        </div>
+
+	  						<!--/////////////////////       DROPPING     ///////////////////////////////////////////////////////// -->
+		
+	
+          <div class="col-lg-12" id="dropping_div" style="display:none">
+            <div class="well">
+			<form class="bs-example form-horizontal">
+			<fieldset>
+				<legend>Dropping unreferenced entries</legend>
+				
+            <div id="mapping_file_drop_pre">
+				 
+					 <div class="form-group">
+						<label class="col-lg-2 control-label">Dropping values</label>
+						<div class="col-lg-10">
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="mapping_file_drop_radio" id="mapping_file_drop_on" value="on" checked="true">
+							  On
+							</label>
+						  </div>
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="mapping_file_drop_radio" id="mapping_file_drop_off" value="off" checked="false">
+							  Off
+							</label>
+						  </div>
+						  <span class="help-block">Choose on if you want to drop of any entry that does not contain certain values present in the list of kept identifiers in the mapping file.</span>
+						</div>
+					  </div>
+					 
+					<div class="form-group">
+						<div class="col-lg-10 col-lg-offset-2">
+						  <input type="button" id="continueBTN2" value="Back" class="btn btn-info" onclick="ShowHideDiv('dropping_div','replacing_div')">
+						  <input type="button" id="continueBTN2" value="Continue" class="btn btn-primary" onclick="OnOff('mapping_file_drop_on','mapping_file_drop_off','mapping_file_drop_pre','mapping_file_drop_info','dropping_div','removing_div')">
+						</div>
+                    </div>
+					</div>
+
+				
+				 
+				 <div id="mapping_file_drop_info">
+				 
+					<div class="checkbox" id="checkboxDrop_div_1">
+					</div>	
+				 
+				 
+				 
+				 </div>
+
+			
+             </fieldset>
+		</form>
+            
+					</div>
+		  		</div>  
+		  
+        </div>
+		
+		
+
+	  
+	  
+	  
+	 <!-- ////////////////////////////// Remove duplicates ///////////////////// -->
+	  	<div class="row">
+          <div class="col-lg-12" id="removing_div" style="display:none">
+            <div class="well">
+			<form class="bs-example form-horizontal">
+			<fieldset>
+				<legend>Removing duplicates</legend>
+
+			
+				<div id="mapping_file_dupl_pre">
+				 
+					 <div class="form-group">
+						<label class="col-lg-2 control-label">Remove duplicates</label>
+						<div class="col-lg-10">
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="mapping_file_dupl_radio" id="mapping_file_dupl_on" value="on" checked="true">
+							  On
+							</label>
+						  </div>
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="mapping_file_dupl_radio" id="mapping_file_dupl_off" value="off" checked="false">
+							  Off
+							</label>
+						  </div>
+						  <span class="help-block">Choose on if you want to be sure that no double counting is present in the data.</span>
+						</div>
+					  </div>
+					 
+					<div class="form-group">
+						<div class="col-lg-10 col-lg-offset-2">
+						  <input type="button" id="continueBTN2" value="Back" class="btn btn-info" onclick="ShowHideDivRemoveBack()">
+						  <input type="button" id="continueBTN2" value="Continue" class="btn btn-primary" onclick="OnOff('mapping_file_dupl_on','mapping_file_dupl_off','mapping_file_dupl_pre','mapping_file_dupl_info','removing_div','merging_div')">
+						</div>
+                    </div>
+					
+				</div>
+
+				 
+				 
+				 <div id="mapping_file_dupl_info">
+				 
+				 	<div class="checkbox" id="checkboxDupl_div_1">
+					</div>	
+				 
+				 </div>
+				 
+	
+		</fieldset>
+		</form>
+            
+          </div>
+		  		  
+		  
+        </div>
+	
+
+	  						<!--/////////////////////       MERGE     ///////////////////////////////////////////////////////// -->
+		
+          <div class="col-lg-12" id="merging_div" style="display:none">
+            <div class="well">
+			<form class="bs-example form-horizontal">
+			<fieldset>
+				<legend>Merging entries</legend>
+				
+            <div id="mapping_file_merge_pre">
+				 
+					 <div class="form-group">
+						<label class="col-lg-2 control-label">Merging values</label>
+						<div class="col-lg-10">
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="mapping_file_merge_radio" id="mapping_file_merge_on" value="on" checked="true">
+							  On
+							</label>
+						  </div>
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="mapping_file_merge_radio" id="mapping_file_merge_off" value="off" checked="false">
+							  Off
+							</label>
+						  </div>
+						  <span class="help-block">Choose on if you want to merge some entries.</span>
+						</div>
+					  </div>
+					 
+					<div class="form-group">
+						<div class="col-lg-10 col-lg-offset-2">
+						<input type="button" id="continueBTN2" value="Back" class="btn btn-info" onclick="ShowHideDiv('merging_div','removing_div')">
+						  <input type="button" id="continueBTN2" value="Continue" class="btn btn-primary" onclick="OnOff('mapping_file_merge_on','mapping_file_merge_off','mapping_file_merge_pre','mapping_file_merge_info','merging_div','mapping_file_summary');Summary();">
+						</div>
+                    </div>
+			</div>
+
+			
+				 
+				 <div id="mapping_file_merge_info">
+				 
+				 	<div class="checkbox" id="checkboxMerge_div_1">
+					</div>	
+				 
+				 </div>
+			
+             </fieldset>
+		</form>
+            
+          </div>
+		  
+		  
+        </div>
+		
+		<div class="col-lg-12" id="mapping_file_summary" style="display:none">
+            <div class="well">
+			<form class="bs-example form-horizontal">
+			<fieldset>
+				<legend>Process Summary</legend>
+				 
+					 <div class="form-group">
+						<label class="col-lg-2">Process</label>
+						<div class="col-lg-10">
+						 Process n&deg : <a id="nbr_summary" ></a></br>
+						 Hit the blue button to validate this process !
+						</div>
+					  </div>
+					  
+					 
+					<div class="form-group">
+						<div class="col-lg-10 col-lg-offset-2">
+						<input type="button" id="continueBTN2" value="Back" class="btn btn-default" onclick="ShowHideDiv('mapping_file_summary','merging_div')">
+						  <input type="button" id="continueBTN2" value="Validate process" class="btn btn-primary" onclick="storeMappingProcessesInputs();ShowHideDiv('mapping_file_summary','mapping_file_processes')">
+						</div>
+                    </div>
+
+
+			
+			
+             </fieldset>
+		</form>
+            
+          </div>
+		  
+		  
+        </div>
+		
+		
+      </div>
+	  
+	  
+	  <!--/////////////////////       NETWORK       ///////////////////////////////////////////////////////// -->
+	  <div class="row">
+          <div class="col-lg-12" style="display:none" id="network_analysis_pre">
+            <div class="well">
+				<form class="bs-example form-horizontal">
+					<fieldset>
+					<legend>Network Analysis</legend>
+						<div class="form-group">
+							<label class="col-lg-2">Network Analysis</label>
+							<div class="col-lg-10">
+							 Run a Network Analysis ?</br>
+							</div>
+					  </div>
+					  <div class="form-group">
+						<div class="col-lg-10 col-lg-offset-2">
+						<input type="button" id="continueBTN2" value="Back" class="btn btn-default" onclick="ShowHideDivNetwork()">
+						  <input type="button" id="continueBTN2" value="Skip" class="btn btn-info" onclick="storeNetworkChoiceNo();ShowHideDiv('network_analysis_pre','config_file_bigDiv')">
+						<br><br><input type="button" id="continueBTN2" value="Run Network Analysis" class="btn btn-primary" onclick="storeNetworkChoiceYes();SetNetworkDiv();ShowHideDiv('network_analysis_pre','network_analysis_div')">
+						</div>
+                    </div>
+			</div>
+		</div>
+		
+		<div class="col-lg-12" style="display:none" id="network_analysis_div">
+            <div class="well">
+				<form class="bs-example form-horizontal">
+					<fieldset>
+					<legend>Network Information</legend>
+							
+							<div id="network_div1">
+							</div>
+							<div id="network_div2">
+							</div>
+							<div id="network_div3">
+							</div>
+							<div id="network_div4">
+							</div>
+							<div id="network_div5">
+							</div>
+							<div id="network_div6">
+							</div>
+							<div id="network_div7">
+							</div>
+							<div id="network_div8">
+							</div>
+							<div id="network_div9">
+							</div>
+							<div id="network_div10">
+							</div>
+							<div id="network_div11">
+							</div>
+							<div id="network_div12">
+							</div>
+							<div id="network_div13">
+							</div>
+							<div id="network_div14">
+							</div>
+							<div id="network_div15">
+							</div>
+							<div id="network_div16">
+							</div>
+							<div id="network_div17">
+							</div>
+							<div id="network_div18">
+							</div>
+							<div id="network_div19">
+							</div>
+							<div id="network_div20">
+							</div>
+
+				
+							<div class="form-group">
+								<div class="col-lg-10 col-lg-offset-2">
+									<br><br>
+									<input type="button" id="continueBTN2" value="Back" class="btn btn-default" onclick="ShowHideDiv('network_analysis_div','network_analysis_pre')">
+									<input type="button" id="continueBTN2" value="Submit and generate config.py file" class="btn btn-primary" onclick="CheckNetwork();">
+								</div>
+							</div>
+			</div>
+		</div>
+	</div>
+	  
+	  	  
+	  
+				<!--/////////////////////       CONFIG FILE       ///////////////////////////////////////////////////////// -->
+		
+		<div class="row">
+          <div class="col-lg-12" style="display:none" id="config_file_bigDiv">
+            <div class="well">
+				<legend>Config file</legend>
+				<p class="text-info"> Download config.py or copy paste the following text into the config.py file in NetGen.</p>
+		
+				
+				<div class="form-group">
+						<div class="col-lg-10 col-lg-offset-2">
+						  <input type="button" id="continueBTN2" value="Back to config" class="btn btn-default" onclick="ShowHideDivConfig()">
+						  <a href="configTool.html"><input type="button" id="continueBTN2" value="Download config.py" class="btn btn-primary" onclick="submitAndWrite()"></a>
+						</div>
+                </div>
+				
+			<div id="config_file">
+					<p>
+					#!/usr/bin/pythonw </br>
+					# -*- coding: utf-8 -*-  </br>
+					</br>
+					# ==========================================</br>
+					#  In-file information </br>
+					# ==========================================</br>
+					</br>
+					in_file_directory       = ['<span class="text-warning" id="wdirectory"></span>']</br>
+					in_file_name            = ['<span class="text-warning"  id="wname"></span>']</br>
+					in_file_extension       = ['<span class="text-warning"  id="wextension"></span>']</br>
+					in_file_delimiter       = ['<span class="text-warning"  id="wdelimiter"></span>']</br>
+					in_file_quote           = ['<span class="text-warning"  id="wquote"></span>']</br>
+					in_file_missing_value   = ['<span class="text-warning"  id="wmissing"></span>']</br>
+					</br>
+					</br>
+					# ==========================================</br>
+					# Structure of the raw data</br>
+					# ==========================================</br>
+					</br>
+					raw_data_structure = [<span class="text-warning" id="wRawStructure"></span>]</br>
+					</br>
+					</br>
+					# ==========================================</br>
+					# Structure of the clean data</br>
+					# ==========================================</br>
+					</br>
+					clean_data_structure = [<span class="text-warning" id="wCleanStructure"></span>]</br>
+					</br>
+					# ==========================================</br>
+					# Out-file information</br>
+					# ==========================================</br>
+					</br>
+					out_file_directory 	= ['<span class="text-warning" id="wOutdirectory"></span>']</br>
+					out_file_name 		= ['<span class="text-warning"  id="wOutname"></span>']</br>
+					out_file_extension  	= ['<span class="text-warning"  id="wOutextension"></span>']</br>
+					out_file_delimiter 	= ['<span class="text-warning"  id="wOutdelimiter"></span>']</br>
+					out_file_missing_value 	= ['<span class="text-warning"  id="wOutmissing"></span>']</br>
+					out_file_single_file   = ['<span class="text-warning"  id="wOutsingle"></span>']</br>
+					out_file_separate_line = ['<span class="text-warning"  id="wOutseparate"></span>']</br>
+					</br>
+					# ==========================================</br>
+					# ==========================================</br>
+					# Mapping information </br>
+					# ==========================================</br>
+					</br>
+					mapping_file_directory      = [<span class="text-warning" id="wMappingdirectory"></span>]</br>
+					mapping_file_name           = [<span class="text-warning" id="wMappingname"></span>]</br>
+					mapping_file_extension      = [<span class="text-warning" id="wMappingextension"></span>]</br>
+					mapping_file_delimiter      = [<span class="text-warning" id="wMappingdelimiter"></span>]</br>
+					</br>
+					mapping_out_file_name       = [<span class="text-warning" id="wMappingOutname"></span>]</br>
+					</br>
+					#-------------------------------------------</br>
+					# Controls</br>
+					#-------------------------------------------</br>
+					</br>
+					# 1 - Positions in the mapping file</br>
+					</br>
+					mapping_replace_ids         = [<span class="text-warning" id="wMappingReplaceIds"></span>]</br>
+					mapping_kept_id_position    = [<span class="text-warning" id="wMappingKeptIdPosition"></span>]</br>
+					mapping_lost_id_position    = [<span class="text-warning" id="wMappingLostIdPosition"></span>]</br>
+					</br>
+					# 2 - Target Position</br>
+					</br>
+					mapping_target_position  = [<span class="text-warning" id="wMappingTargetPosition"></span>]</br>
+					</br>
+					</br>
+					#-------------------------------------------</br>
+					</br>
+					# 3 - Drop Unreferenced Entries</br>
+					</br>
+					mapping_drop_unreferenced_entries   = [<span class="text-warning" id="wMappingDropUnreferencedEntries"></span>]</br>
+					mapping_target_unreferenced_entries = [<span class="text-warning" id="wMappingTargetUnreferencedEntries"></span>]</br>
+					</br>
+					#-------------------------------------------</br>
+					</br>
+					# 4 -  Drop Ghost</br>
+
+					mapping_drop_ghosts 	= [<span class="text-warning" id="wMappingDropGhosts"></span>]</br>
+					</br>
+					#-------------------------------------------</br>
+					</br>
+					# 5 -  Remove Duplicates</br>
+
+					mapping_remove_duplicates       = [<span class="text-warning" id="wMappingRemoveDuplicates"></span>]</br>
+					mapping_target_duplicates_set   = [<span class="text-warning" id="wMappingTargetDuplicatesSet"></span>]</br>
+					</br>
+					#-------------------------------------------</br>
+					</br>
+					# 6 - Merge entries</br>
+
+					mapping_merge_entries       = [<span class="text-warning" id="wMappingMergeEntries"></span>]</br>
+					mapping_target_merge_set    = [<span class="text-warning" id="wMappingTargetMergeSet"></span>]</br>
+					</br>
+					#-------------------------------------------</br>
+					</br>
+					# 7 -  Commands</br>
+					</br>
+					mapping_commands         = [<span class="text-warning" id="wMappingCommands"></span>]</br>
+					</br>
+					</br>
+					#-------------------------------------------</br>
+					# ==========================================</br>
+					# ==========================================</br>
+					# Network information </br>
+					# ==========================================</br>
+
+					network_analysis = ['<span class="text-warning" id="wNetworkAnalysis"></span>']</br>
+
+					network_out_node = [<span class="text-warning" id="wNetworkOutNode"></span>]</br>
+					network_in_node = [<span class="text-warning" id="wNetworkInNode"></span>]</br>
+					network_is_directed = [<span class="text-warning" id="wNetworkIsDirected"></span>]</br>
+					network_is_weighted = [<span class="text-warning" id="wNetworkIsWeighted"></span>]</br>
+					network_edge_weight = [<span class="text-warning" id="wNetworkEdgeWeight"></span>]</br>
+
+					# ==========================================</br>
+					# ==========================================</br>
+					</p>
+				
+            </div>
+          </div>
+		  		  
+		  
+        </div>
+		
+		
+      </div>
+
+</div>
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            
+            <br>
+			<p>&copy NetGen 2014</p>
+          </div>
+        </div>
+        
+      </footer>
+    
+
+    </div>
+	<script src="js/controller/checkBoxesManager.js"></script>
+	<script src="js/controller/contentManager.js"></script>
+	<script src="js/controller/ShowHideDiv.js"></script>
+	<script src="js/controller/inputsChecker.js"></script>
+	<script src="js/controller/progressBar.js"></script>
+	<script src="js/model/storage.js"></script>
+	<script src="js/model/submitToConfig.js"></script>
+	<script src="js/controller/download.js"></script>
+	<script src="filesaver/FileSaver.js"></script>
+	
+    <script src="bootstrap/js/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+	
+
+
+  </body>
+</html>
