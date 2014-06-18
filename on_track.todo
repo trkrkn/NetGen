@@ -1,4 +1,12 @@
 TODO:
+-20140617:
+
+on netgen (Co):
+	add the possibility of aggregating periods for time series: eg. from daily to weekly data
+
+on netgen (Ivan Alves):
+	look for a possibility of embedding netgen within oracle to everything gets done inside the database
+
 -20140613:
 
 on configtool local:
