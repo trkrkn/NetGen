@@ -117,12 +117,20 @@ class DataHandler:
                                         elem = str(elem)
                         else:
                                 if 'int' in format:
+                                    if elem.isdigit(): 
                                         elem = int(elem)
+                                    else:
+                                        print ("WARNING: casting non-digit on INT format (original value: {0}). Value put to 0".format(elem))
+                                        elem = 0
                                 else:
                                         if 'float' in format:
-                                            if ',' in str(elem):
-                                                elem = elem.replace(',','.')
-                                            elem = float(elem)
+                                            if elem.isdigit():
+                                                if ',' in str(elem):
+                                                    elem = elem.replace(',','.')
+                                                elem = float(elem)
+                                            else: 
+                                                print ("WARNING: casting non-digit on FLOAT format (original value: {0}). Value put to 0.0".format(elem))
+                                                elem = 0
                                         else:
                                                 if 'date' in format:
                                                         struct = format.split()[2]
